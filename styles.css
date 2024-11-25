@@ -24,12 +24,16 @@ main {
     flex-grow: 1; /* Ensures the main content grows to fill the available space */
 }
 
+/* Updated Header */
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #c4c4c4; /* Background color for the entire header */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow at the bottom */
-
+    background-color: #c4c4c4; /* Background color for the header */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the elements */
+    justify-content: space-between; /* Space between logo and navigation */
+    max-width: 1200px; /* Align header with hero container width */
+    margin: 0 auto; /* Center the header horizontally */
+    padding: 20px 0; /* Padding for spacing */
 }
 
 /* Social media icon styling */
@@ -49,53 +53,53 @@ header {
     color: #06a0ff; /* Hover color */
 }
 
-/* Logo styling */
+/* Updated Logo Container */
 .logo-container {
-    margin-bottom: 20px;
+    display: flex; /* Ensure the logo is part of the flex layout */
+    align-items: center; /* Align the logo vertically */
 }
 
 .logo {
-    width: 150px; /* Original size for mobile */
+    width: 150px; /* Adjust logo size */
     height: auto;
+    margin-right: 20px; /* Add space between the logo and navigation */
 }
 
-/* Navigation styling for desktop */
+/* Updated Navigation */
 nav {
-    background-color: #c4c4c4; /* Dark background to match header */
-    padding: 10px 0;
-    margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow around the menu */
-    display: flex;
-    justify-content: center;
-    position: relative;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); /* Parallelogram shape */
+    flex-grow: 1; /* Allow the navigation to use remaining space */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: flex-start; /* Align navigation links to the left */
+    align-items: center; /* Vertically center the links */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Horizontal layout for links */
     padding: 0;
     margin: 0;
 }
 
 .nav-links li {
-    margin: 0 20px;
-    position: relative;
+    margin: 0 20px; /* Add spacing between navigation items */
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-shadow: 2px 2px 4px black;
-    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 20px; /* Add padding for better spacing */
+    text-shadow: 2px 2px 4px black; /* Add shadow for readability */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links li a:hover {
+    color: #39bbff; /* Change color on hover */
 }
 
 .nav-links li a::after {
-    content: "";
+    content: ""; /* Add underline effect */
     position: absolute;
     left: 50%;
     bottom: -5px;
@@ -107,16 +111,9 @@ nav {
 }
 
 .nav-links li a:hover::after {
-    width: 100%; /* Grow the underline on hover */
+    width: 100%; /* Expand underline on hover */
 }
 
-.nav-links li a:hover {
-    color: #39bbff; /* Text color change on hover */
-}
-
-.nav-links li a:hover {
-    background-color: #c4c4c4; /* Hover background color */
-}
 
 /* Mobile Menu (collapsed by default) */
 @media (max-width: 768px) {
