@@ -27,7 +27,7 @@ main {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #282828; /* Background color for the entire header */
+    background-color: #c4c4c4; /* Background color for the entire header */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow at the bottom */
 
 }
@@ -281,7 +281,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: #282828;
+    background-color: #c4c4c4;
     padding: 20px 0;
     text-align: center;
     width: 100%;
