@@ -26,14 +26,21 @@ main {
 
 /* Updated Header */
 header {
-    background-color: #c4c4c4; /* Background color for the header */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center the elements */
-    justify-content: space-between; /* Space between logo and navigation */
-    max-width: 1200px; /* Align header with hero container width */
-    margin: 0 auto; /* Center the header horizontally */
-    padding: 20px 0; /* Padding for spacing */
+    background-color: #c4c4c4; /* Grey background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow below */
+    width: 100vw; /* Full width across the viewport */
+    position: relative; /* Allow independent positioning */
+    z-index: 10; /* Ensure header stays above other content */
+}
+
+/* Wrapper for Header Content */
+.header-wrapper {
+    display: flex; /* Flex layout for centering */
+    align-items: center; /* Vertically align logo and nav */
+    justify-content: space-between; /* Space out logo and nav */
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px 0; /* Add spacing inside the header */
 }
 
 /* Social media icon styling */
