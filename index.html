@@ -3,31 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turn2 Remodeling</title>
+    <title>Turn2Remodeling | Premier Remodeling Experts in DFW</title>
+    <meta name="description" content="Turn2Remodeling - Transform your home with the premier remodeling experts serving the Dallas-Fort Worth area.">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+
+    <script>
+        function loadPage(page, section = null) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', page, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('content').innerHTML = xhr.responseText;
+                    if (section) {
+                        const targetElement = document.getElementById(section);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        window.onload = function() {
+            loadPage('home.html');
+        };
+
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </head>
 <body>
-    <!-- Static Header -->
+
+    <!-- Logo and Navigation Menu -->
     <header>
-        <h1>Turn2 Remodeling</h1>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="loadPage('home.html')">Home</a></li>
-                <li><a href="#" onclick="loadPage('contact-us.html')">Contact Us</a></li>
-                <li><a href="#" onclick="loadPage('about.html')">About Us</a></li>
+        <div class="logo-container">
+            <a href="#" onclick="loadPage('home.html'); return false;">
+                <img src="turn2azul.png" alt="Turn2Remodeling" class="logo">
+            </a>
+        </div>
+        
+        <!-- Social Media Icons -->
+        <div class="social-media-icons">
+            <a href="#" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Add more icons as needed -->
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav id="menu-box">
+            <!-- Menu Button for Mobile -->
+            <div class="menu-button" onclick="toggleMenu()">MENU</div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#" onclick="loadPage('home.html')">HOME</a></li>
+                <li><a href="#" onclick="loadPage('services.html')">SERVICES</a></li>
+                <li><a href="#" onclick="loadPage('aboutus.html')">ABOUT US</a></li>
+                <li><a href="#" onclick="loadPage('contactus.html')">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Dynamic Content -->
-    <main id="dynamic-content">
-        <!-- Default content will be loaded here -->
+    <!-- Placeholder Content Section -->
+    <main>
+        <div id="content">
+            <!-- Content will be dynamically loaded here -->
+        </div>
     </main>
 
-    <!-- Static Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Turn2 Remodeling. All rights reserved.</p>
+        <div class="footer-container">
+            <ul class="footer-nav">
+                <li><a href="#" onclick="loadPage('home.html'); return false;">HOME</a></li>
+                <li><a href="#" onclick="loadPage('services.html'); return false;">SERVICES</a></li>
+                <li><a href="#" onclick="loadPage('about-us.html'); return false;">ABOUT US</a></li>
+                <li><a href="#" onclick="loadPage('contact-us.html'); return false;">CONTACT</a></li>
+            </ul>
+            <div class="footer-info">
+                <p>&copy; 2024 Turn2Remodeling. All rights reserved.</p>
+                <p>Arlington, TX | Phone: <a href="tel:+12144448465">+1-214-444-8465</a></p>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
