@@ -34,7 +34,6 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow below the header */
     padding-bottom: 40px; /* Add space inside the header, if needed */
 }
-}
 
 /* Wrapper for Content Inside Header */
 .header-wrapper {
