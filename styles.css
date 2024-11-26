@@ -24,12 +24,23 @@ main {
     flex-grow: 1; /* Ensures the main content grows to fill the available space */
 }
 
+/* Header Styling */
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #c4c4c4; /* Background color for the entire header */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow at the bottom */
+    background-color: #c4c4c4; /* Full-width grey background */
+    width: 100%; /* Ensure header spans the full width */
+    position: fixed; /* Keep header fixed at the top */
+    top: 0; /* Stick to the top of the page */
+    z-index: 10; /* Ensure it stays above other elements */
+}
 
+/* Wrapper for Content Inside Header */
+.header-wrapper {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 20px 0; /* Spacing around content */
 }
 
 /* Social media icon styling */
@@ -49,49 +60,45 @@ header {
     color: #06a0ff; /* Hover color */
 }
 
-/* Logo styling */
+/* Logo Styling */
 .logo-container {
-    margin-bottom: 20px;
+    display: flex; /* Align logo and navigation in a row */
+    align-items: center; /* Vertically align items */
 }
 
 .logo {
-    width: 150px; /* Original size for mobile */
-    height: auto;
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Keep logo aspect ratio */
+    margin-right: 20px; /* Space between logo and navigation */
 }
 
-/* Navigation styling for desktop */
+/* Navigation Styling */
 nav {
-    background-color: #c4c4c4; /* Dark background to match header */
-    padding: 10px 0;
-    margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow around the menu */
-    display: flex;
-    justify-content: center;
-    position: relative;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); /* Parallelogram shape */
+    flex-grow: 1; /* Allow nav to use remaining space */
+    display: flex; /* Horizontal layout for nav links */
+    justify-content: flex-start; /* Align links to the left */
+    align-items: center; /* Vertically align links */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove list styling */
+    display: flex; /* Horizontal layout for links */
     padding: 0;
     margin: 0;
 }
 
 .nav-links li {
-    margin: 0 20px;
-    position: relative;
+    margin: 0 20px; /* Add spacing between links */
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-shadow: 2px 2px 4px black;
-    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Link color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Add padding for better click area */
+    text-shadow: 2px 2px 4px black; /* Shadow for readability */
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 .nav-links li a::after {
@@ -111,7 +118,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #39bbff; /* Text color change on hover */
+    color: #39bbff; /* Change color on hover */
 }
 
 .nav-links li a:hover {
@@ -217,10 +224,10 @@ nav {
     }
 }
 
-/* Hero Section */
+/* Ensure Hero Section Starts Below Header */
 .hero-section {
     background: none;
-    padding: 50px 0 20px 0;
+    padding-top: 100px; /* Add spacing to account for fixed header */
 }
 
 .hero-container {
