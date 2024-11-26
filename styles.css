@@ -102,20 +102,20 @@ nav {
     transition: all 0.3s ease; /* Smooth hover effect */
 }
 
+/* Underline Styling */
 .nav-links li a::after {
-    content: "";
+    content: ""; /* Add underline effect */
     position: absolute;
-    left: 50%;
-    bottom: -5px;
-    width: 0;
-    height: 3px;
-    background-color: #00a0ff;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+    left: 0;
+    bottom: 0; /* Position at the bottom of the link */
+    width: 0; /* Start with no underline */
+    height: 3px; /* Underline thickness */
+    background-color: #00a0ff; /* Underline color */
+    transition: width 0.3s ease; /* Smooth underline animation */
 }
 
 .nav-links li a:hover::after {
-    width: 100%; /* Grow the underline on hover */
+    width: 100%; /* Expand underline to full text width */
 }
 
 .nav-links li a:hover {
