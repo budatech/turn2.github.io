@@ -89,37 +89,39 @@ nav {
 }
 
 .nav-links li {
+    position: relative; /* Ensure li is relatively positioned for layout */
     margin: 0 20px; /* Add spacing between links */
 }
 
 .nav-links li a {
-    text-decoration: none; /* Remove underline */
+    position: relative; /* Position relative to handle the underline */
+    text-decoration: none; /* Remove default underline */
     color: white; /* Link color */
     font-size: 18px; /* Adjust font size */
     font-weight: bold; /* Bold text */
-    padding: 10px 20px; /* Add padding for better click area */
     text-shadow: 2px 2px 4px black; /* Shadow for readability */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    padding: 10px 0; /* Add spacing above and below text */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Underline Styling */
+/* Underline for Text Only */
 .nav-links li a::after {
-    content: ""; /* Add underline effect */
-    position: absolute;
-    left: 0;
-    bottom: 0; /* Position at the bottom of the link */
+    content: ""; /* Create the underline */
+    position: absolute; /* Position relative to the link */
+    left: 0; /* Align to the start of the text */
+    bottom: 0; /* Align to the bottom of the text */
     width: 0; /* Start with no underline */
     height: 3px; /* Underline thickness */
     background-color: #00a0ff; /* Underline color */
-    transition: width 0.3s ease; /* Smooth underline animation */
+    transition: width 0.3s ease; /* Smooth animation for underline */
 }
 
 .nav-links li a:hover::after {
-    width: 100%; /* Expand underline to full text width */
+    width: 100%; /* Expand underline to full width of text */
 }
-
+/* Hover Text Color Change */
 .nav-links li a:hover {
-    color: #39bbff; /* Change color on hover */
+    color: #39bbff; /* Change text color on hover */
 }
 
 .nav-links li a:hover {
