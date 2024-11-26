@@ -90,7 +90,7 @@ nav {
 
 .nav-links li {
     position: relative; /* Ensure li is relatively positioned for layout */
-    margin: 0 40px; /* Add spacing between links */
+    margin: 0 90px; /* Add spacing between links */
 }
 
 .nav-links li a {
