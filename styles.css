@@ -227,7 +227,7 @@ nav {
 
 /* Push the hero section content down */
 .hero-section {
-    margin-top: 100px; /* Creates space below the header */
+    margin-top: 60px; /* Creates space below the header */
     padding-bottom: 60px; /* Creates space above the footer */
 }
 
