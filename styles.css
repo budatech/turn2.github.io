@@ -81,7 +81,8 @@ nav {
 
 .nav-links li {
     position: relative; /* Ensure li is relatively positioned for layout */
-    margin: 0 50px; /* Reduce spacing between links */
+    margin: 0 40px; /* Reduce spacing between links */
+    white-space: nowrap; /* Prevent breaking into multiple lines */
                 }
 
 .nav-links li a {
