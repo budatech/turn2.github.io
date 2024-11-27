@@ -271,8 +271,8 @@ footer {
                         }
 
 .social-media-icon {
-    width: 40px; /* Adjust size as needed */
-    height: 40px;    
+    width: 29px; /* Updated width */
+    height: 31px; /* Updated height */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     background-size: contain; /* Ensure the image fits within the icon */
     background-repeat: no-repeat; /* Prevent repeating */
