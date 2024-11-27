@@ -121,8 +121,8 @@ nav {
     background-image: url('images/tile.jpg'); /* Path to the seamless pattern */
     background-repeat: repeat; /* Repeat the pattern throughout the background */
     background-size: auto; /* Use the natural size of the pattern */
-    padding-top: 40px; /* Space between the header and hero content */
-    padding-bottom: 60px; /* Space between hero and footer */
+    padding-top: 20px; /* Reduce padding for alignment */
+    padding-bottom: 20px; /* Match top padding */
             }
 
 .hero-container {
@@ -178,6 +178,22 @@ nav {
     font-size: 16px;
     margin-bottom: 25px;
             }
+
+.hero-button {
+    display: inline-block;
+    background-color: #39bbff; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Button size */
+    text-align: center;
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    margin: 10px 5px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Hover effect */
+            }
+
+.hero-button:hover {background-color: #2890df; /* Darker hover color */}
 
 .hero-section.reverse .hero-container {
     display: flex; /* Use flexbox for layout */
