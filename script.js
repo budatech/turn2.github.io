@@ -11,3 +11,20 @@ function loadPage(page) {
 document.addEventListener('DOMContentLoaded', () => {
     loadPage('home.html');
 });
+
+document.querySelectorAll('.social-media-icon').forEach(icon => {
+    const originalSrc = icon.src;
+    const hoverSrc = icon.getAttribute('data-hover');
+
+    icon.addEventListener('mouseenter', () => {
+        icon.src = hoverSrc; /* Switch to hover image */
+    });
+
+    icon.
+    });
+addEventListener('mouseleave', () => {
+        icon.
+        icon
+src = originalSrc; /* Switch back to original image */
+    });
+});
