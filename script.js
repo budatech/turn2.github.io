@@ -12,19 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPage('home.html');
 });
 
+// Social media icon hover effect
 document.querySelectorAll('.social-media-icon').forEach(icon => {
     const originalSrc = icon.src;
     const hoverSrc = icon.getAttribute('data-hover');
 
+    // Change to hover image on mouse enter
     icon.addEventListener('mouseenter', () => {
-        icon.src = hoverSrc; /* Switch to hover image */
+        icon.src = hoverSrc;
     });
 
-    icon.
-    });
-addEventListener('mouseleave', () => {
-        icon.
-        icon
-src = originalSrc; /* Switch back to original image */
+    // Change back to original image on mouse leave
+    icon.addEventListener('mouseleave', () => {
+        icon.src = originalSrc;
     });
 });
