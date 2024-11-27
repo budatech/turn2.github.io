@@ -225,10 +225,13 @@ nav {
     }
 }
 
-/* Push the hero section content down */
+/* Hero Section */
 .hero-section {
-    margin-top: 60px; /* Creates space below the header */
-    padding-bottom: 60px; /* Creates space above the footer */
+    background-image: url('images/tile.jpg'); /* Path to the seamless pattern */
+    background-repeat: repeat; /* Repeat the pattern throughout the background */
+    background-size: auto; /* Use the natural size of the pattern */
+    padding-top: 40px; /* Space between the header and hero content */
+    padding-bottom: 60px; /* Space between hero and footer */
 }
 
 .hero-container {
