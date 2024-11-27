@@ -120,8 +120,8 @@ nav {
     background-image: url('images/tile.jpg'); /* Path to the seamless pattern */
     background-repeat: repeat; /* Repeat the pattern throughout the background */
     background-size: auto; /* Use the natural size of the pattern */
-    padding-top: 20px; /* Reduce padding for alignment */
-    padding-bottom: 20px; /* Match top padding */
+    padding-top: 40px; /* Reduce padding for alignment */
+    padding-bottom: 40px; /* Match top padding */
             }
 
 .hero-container {
@@ -182,7 +182,8 @@ nav {
 
 .hero-button:hover {background-color: #2890df;}
 
-/* Reverse layout for hero section */
+/*######################### DESKTOP REVERSE HERO STYLING #########################*/
+
 .hero-section.reverse .hero-container {flex-direction: row-reverse; /* Reverse the order of the items */}
 
 .hero-section.reverse .hero-text-container {border-radius: 15px 0 0 15px; /* Adjust border radius for reversed layout */}
