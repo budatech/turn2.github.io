@@ -125,6 +125,8 @@ nav {
     background-size: auto; /* Use the natural size of the pattern */
     padding-top: 40px; /* Reduce padding for alignment */
     padding-bottom: 40px; /* Match top padding */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 15px; /* Optional: Rounding for smoothness */
             }
 
 .hero-container {
