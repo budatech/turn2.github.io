@@ -389,6 +389,8 @@ footer {
 }
 
 /* Mobile Footer (Responsive) */
+
+
 @media (max-width: 768px) {
     .footer-nav {
         flex-direction: column;
@@ -702,3 +704,44 @@ a[href*="elfsight.com/google-reviews-widget"] {
 .elfsight-app-63341106-d96a-4a08-a569-90e41a639459 a[href*="elfsight.com/google-reviews-widget"] svg {
     display: none !important;
 }
+
+/* Base layout for hero section */
+.hero-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Default layout: Image left, Text right */
+    align-items: stretch; /* Stretch items to fill the height */
+}
+
+/* Reverse layout for hero section */
+.hero-section.reverse .hero-container {
+    flex-direction: row-reverse; /* Reverse the order: Text left, Image right */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Default stack: Image on top, Text below */
+    }
+
+    .hero-section.reverse .hero-container {
+        flex-direction: column-reverse; /* Reverse stack: Text on top, Image below */
+    }
+
+    /* Ensure proper border-radius for vertical stacking */
+    .hero-text-container {
+        border-radius: 15px 15px 0 0; /* Rounded corners on top */
+    }
+
+    .hero-section.reverse .hero-text-container {
+        border-radius: 0 0 15px 15px; /* Rounded corners on bottom */
+    }
+
+    .hero-image img {
+        border-radius: 0 0 15px 15px; /* Adjust rounded corners for normal stack */
+    }
+
+    .hero-section.reverse .hero-image img {
+        border-radius: 15px 15px 0 0; /* Adjust rounded corners for reverse stack */
+    }
+}
+
