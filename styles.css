@@ -319,6 +319,36 @@ footer {
 
 /*################################################## MOBILE STYLING ##################################################*/
 
+@media (max-width: 1024px) {
+
+/*######################### MOBILE FOOTER STYLING #########################*/
+    
+    .hero-container {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center content horizontally */
+                    }
+
+    .hero-image img {
+        width: 100%; /* Ensure the image takes full width */
+        max-height: auto; /* Maintain aspect ratio */
+        border-radius: 15px; /* Rounded corners */
+                    }
+
+    .hero-text-container {
+        width: 100%; /* Full width for text container */
+        padding: 20px; /* Adjust padding for smaller screens */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+                        }
+    
+    .hero-text h1 {font-size: 24px; /* Reduce heading size */}
+
+    .hero-text p {font-size: 14px; /* Reduce paragraph text size */}
+
+    .hero-button {margin: 10px auto; /* Center-align buttons */}
+
+}
+
 @media (max-width: 768px) {
 
 /*######################### MOBILE FOOTER STYLING #########################*/
