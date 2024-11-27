@@ -236,6 +236,7 @@ nav {
 
 .hero-container {
     display: flex;
+    flex-direction: row; /* Default layout: Image left, Text right */
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -310,6 +311,7 @@ nav {
 
 .hero-section.reverse .hero-image {
     flex: 1; /* Allow the image container to take half the space */
+    border-radius: 0 15px 15px 0; /* Flip border radius for reversed layout */
 }
 
 .hero-section.reverse .hero-image img {
