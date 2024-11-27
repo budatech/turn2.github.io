@@ -127,25 +127,25 @@ nav {
 .hero-container {
     display: flex;
     flex-direction: row; /* Default layout: Image left, Text right */
-    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
                 }
 
+.hero-image {flex: 1;}
+
 .hero-image img {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 15px 0 0 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image fills the space without distortion */
                 }
 
 .hero-text-container {
-    background-color: rgba(255, 255, 255); /* Black background with 50% opacity */
+    background-color: #ffffff; /* White background */
     flex: 1;
     padding: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
@@ -153,75 +153,41 @@ nav {
     text-align: center;
                     }
 
-.hero-text h3,
-.hero-text p {
-    margin: 0 auto;
-    color: black; /* black text */
-            }
-
 .hero-text h1 {
-    margin: 0 auto;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #00baff; /* Updated color */
-                }
-
-.hero-text h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-                }
+    color: #00baff;
+            }
 
 .hero-text p {
     font-size: 16px;
     margin-bottom: 25px;
+    color: black;
             }
 
 .hero-button {
     display: inline-block;
-    background-color: #39bbff; /* Button color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Button size */
-    text-align: center;
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Bold text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    margin: 10px 5px; /* Space between buttons */
-    transition: background-color 0.3s ease; /* Hover effect */
+    background-color: #39bbff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
             }
 
-.hero-button:hover {background-color: #2890df; /* Darker hover color */}
+.hero-button:hover {background-color: #2890df;}
 
-.hero-section.reverse .hero-container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row-reverse; /* Reverse the order of the items */
-    align-items: stretch; /* Ensure the items stretch evenly */
-                                    }
+/* Reverse layout for hero section */
+.hero-section.reverse .hero-container {flex-direction: row-reverse; /* Reverse the order of the items */}
 
-.hero-section.reverse .hero-text-container {
-    flex: 1; /* Allow the text container to take half the space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    padding: 20px; /* Add padding around the text */
-    background-color: #ffffff; /* Ensure the text background remains white */
-    border-radius: 15px 0 0 15px; /* Adjust border radius for reversed layout */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-                                            }
+.hero-section.reverse .hero-text-container {border-radius: 15px 0 0 15px; /* Adjust border radius for reversed layout */}
 
-.hero-section.reverse .hero-image {
-    flex: 1; /* Allow the image container to take half the space */
-    border-radius: 0 15px 15px 0; /* Flip border radius for reversed layout */
-                                }
-
-.hero-section.reverse .hero-image img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0 15px 15px 0; /* Adjust border radius for reversed layout */
-    object-fit: cover; /* Ensure the image fills the space without distortion */
-                                    }
+.hero-section.reverse .hero-image img {border-radius: 0 15px 15px 0; /* Adjust border radius for reversed layout */}
 
 
 /*######################### DESKTOP FOOTER STYLING #########################*/
@@ -354,19 +320,21 @@ footer {
     
 /*######################### MOBILE HERO SECTION STYLING #########################*/
 
-    .hero-section {padding: 20px 0; /* Adjust padding for smaller screens */)
-
-    .hero-widget-container {width: 100%; /* Make it full width on smaller screens */}
-
     .hero-container {flex-direction: column; /* Stack hero section vertically on mobile */}
 
     .hero-section.reverse .hero-container {flex-direction: column-reverse; /* Text on top, image below */}
 
-    .hero-text-container {padding: 20px; /* Reduce padding on mobile */}
+    .hero-text-container {
+        border-radius: 15px 15px 0 0; /* Rounded corners on top for mobile */
+        padding: 20px; /* Reduce padding on mobile */
+                        }
+    
+    .hero-section.reverse .hero-text-container {border-radius: 0 0 15px 15px; /* Rounded corners on bottom for reverse layout */}
 
     .hero-image img {border-radius: 0; /* Remove rounded corners on mobile for consistency */}
 
-    
+    .hero-section.reverse .hero-image img {border-radius: 0; /* Remove rounded corners for reverse layout on mobile */}
+
 /*######################### MOBILE LOGO SECTION STYLING #########################*/
 
     .logo {width: 120px; /* Smaller logo size for mobile */}
