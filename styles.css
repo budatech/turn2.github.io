@@ -263,25 +263,36 @@ footer {
 /*######################### SOCIAL MEDIA ICON STYLING #########################*/
 
 .social-media-container {
-    position: absolute; /* Position relative to the header */
-    top: 10px; /* Distance from the top of the header */
-    right: 20px; /* Distance from the right edge of the header */
-    display: flex; /* Flexbox for horizontal alignment */
+    display: flex;
     gap: 10px; /* Space between icons */
-    z-index: 10; /* Ensure it overlays properly */
+    position: absolute; /* Position within the header */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
                         }
 
 .social-media-icon {
-    width: 30px; /* Icon size */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 40px; /* Adjust size as needed */
+    height: 40px;    
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    background-size: contain; /* Ensure the image fits within the icon */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the image within the container */
+    display: block;
+    cursor: pointer; /* Add a pointer cursor on hover */
                     }
 
-.social-media-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Fade effect */
-                        }
+.social-media-icon.facebook {background-image: url('images/turn2facebookbutton.png');}
+
+.social-media-icon.facebook:hover {background-image: url('images/turn2facebookbuttonhover.png');}
+
+.social-media-icon.instagram {background-image: url('images/turn2instabutton.png');}
+
+.social-media-icon.instagram:hover {background-image: url('images/turn2instabuttonhover.png');}
+
+.social-media-icon.tiktok {background-image: url('images/turn2tiktokbutton.png');}
+
+.social-media-icon.tiktok:hover {background-image: url('images/turn2tiktokbuttonhover.png');}
+
 
 
 /*######################### RESPONSIVE DESKTOP STYLING #########################*/
