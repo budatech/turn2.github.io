@@ -75,6 +75,8 @@ nav {
     display: flex; /* Horizontal layout for links */
     padding: 0;
     margin: 0;
+    flex-wrap: nowrap; /* Prevent wrapping */
+
             }
 
 .nav-links li {
