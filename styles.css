@@ -330,6 +330,7 @@ footer {
     padding: 10px 20px;
     display: inline-block;
     position: relative;
+    text-shadow: 2px 2px 4px black;
 }
 
 .footer-nav li a:hover {
