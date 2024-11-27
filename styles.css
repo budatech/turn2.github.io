@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;g
 }
 
 html, body {
@@ -26,23 +26,20 @@ main {
 
 /* Header Styling */
 header {
-    background-color: #c4c4c4; /* Full-width grey background */
-    width: 100%; /* Ensure header spans the full width */
-    position: relative; /* No need for fixed positioning */
-    top: 0; /* Stick to the top of the page */
-    z-index: 10; /* Ensure it stays above other elements */
+    background-color: #c4c4c4; /* Grey background */
+    width: 100%; /* Full width */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow below the header */
-    padding-bottom: 20px; /* Add space inside the header, if needed */
+    padding: 20px 0; /* Space inside the header */
+    position: relative; /* No need for fixed positioning */
 }
 
-/* Wrapper for Content Inside Header */
+/* Wrapper for Header Content */
 .header-wrapper {
     max-width: 1200px; /* Limit content width */
     margin: 0 auto; /* Center content horizontally */
     display: flex; /* Flexbox layout */
     align-items: center; /* Vertically center items */
     justify-content: space-between; /* Space between logo and nav */
-    padding: 20px 0; /* Spacing around content */
 }
 
 /* Social media icon styling */
