@@ -260,6 +260,30 @@ footer {
 .footer-info p {margin: 5px 0;}
 
 
+/*######################### SOCIAL MEDIA ICON STYLING #########################*/
+
+.social-media-container {
+    position: absolute; /* Position relative to the header */
+    top: 10px; /* Distance from the top of the header */
+    right: 20px; /* Distance from the right edge of the header */
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 10px; /* Space between icons */
+    z-index: 10; /* Ensure it overlays properly */
+                        }
+
+.social-media-icon {
+    width: 30px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Pointer cursor on hover */
+                    }
+
+.social-media-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Fade effect */
+                        }
+
+
 /*######################### RESPONSIVE DESKTOP STYLING #########################*/
 @media (min-width: 769px) {
     
