@@ -47,7 +47,6 @@ header {
     justify-content: space-between; /* Space between logo and nav */
                 }
 
-
 /*######################### DESKTOP LOGO STYLING #########################*/
 
 .logo-container { 
@@ -80,7 +79,7 @@ nav {
 
 .nav-links li {
     position: relative; /* Ensure li is relatively positioned for layout */
-    margin: 0 75px; /* Add spacing between links */
+    margin: 0 50px; /* Reduce spacing between links */
                 }
 
 .nav-links li a {
