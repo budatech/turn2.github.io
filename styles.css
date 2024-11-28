@@ -313,8 +313,8 @@ footer {
     gap: 20px; /* Add space between the images */
     max-width: 1200px; /* Match the width of the hero section */
     width: 100%; /* Make it responsive */
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding: 20px 0; /* Add spacing above and below the gallery */
+
             }                        }
 
 .gallery-image {
