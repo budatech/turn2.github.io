@@ -21,7 +21,6 @@ body {
     background: url('seamlessbg.png') repeat; /* Use seamless1.png as background */
     background-position: center center; /* Position the image in the center */
     background-size: cover; /* Ensure the image uses its natural size */
-    background-color: #000000;
     color: #c4c4c4;
     min-height: 100vh; /* Ensure body covers full viewport height */
     display: flex;
