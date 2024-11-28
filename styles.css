@@ -122,12 +122,10 @@ nav {
 /*######################### DESKTOP HERO STYLING #########################*/
 
 .hero-section {
-    background-image: url('images/tile.jpg'); /* Path to the seamless pattern */
-    background-repeat: repeat; /* Repeat the pattern throughout the background */
-    background-size: auto; /* Use the natural size of the pattern */
-    padding-top: 40px; /* Reduce padding for alignment */
-    padding-bottom: 20px; /* Match top padding */
-    border-radius: 15px; /* Optional: Rounding for smoothness */
+    background: none; /* Remove any background styles */
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-radius: 15px;
             }
 
 .hero-container {
@@ -303,7 +301,6 @@ footer {
     justify-content: center; /* Center the gallery on the page */
     align-items: center; /* Vertically align items */
     padding: 40px 0; /* Add spacing above and below the gallery */
-    background-color: transparent !important;
                 }
 
 .image-gallery-container {
@@ -314,8 +311,6 @@ footer {
     max-width: 1200px; /* Match the width of the hero section */
     width: 100%; /* Make it responsive */
     padding: 0 20px; /* Add some horizontal padding */
-    background-color: transparent !important;
-
                         }
 
 .gallery-image {
