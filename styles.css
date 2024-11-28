@@ -303,7 +303,7 @@ footer {
     display: flex;
     justify-content: center; /* Center the gallery on the page */
     align-items: center; /* Vertically align items */
-    padding: 40px 0; /* Add spacing above and below the gallery */
+    padding: 20px 0; /* Add spacing above and below the gallery */
                 }
 
 .image-gallery-container {
