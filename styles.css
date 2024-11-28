@@ -307,23 +307,23 @@ footer {
                 }
 
 .image-gallery-container {
-    display: flex; /* Flexbox for arranging images */
-    justify-content: space-between; /* Even spacing between images */
-    align-items: center; /* Center-align images vertically */
-    max-width: 1200px; /* Match the width of the hero section */
-    margin: 0 auto; /* Center the gallery on the page */
-    padding: 0 20px; /* Add padding for consistent alignment */
-    gap: 20px; /* Space between images */
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    align-items: center;
+    max-width: 1200px; /* Match the hero container's width */
+    margin: 0 auto; /* Center the container */
+    padding: 0; /* No extra padding */
+    gap: 20px; /* Adjust space between images */
                         }
 
 .gallery-image {
-    flex: 1; /* Allow images to grow equally */
-    height: 200px; /* Adjust height to your preference */
-    max-width: calc(100% / 5 - 20px); /* Divide the width equally for 5 images, accounting for gaps */
-    object-fit: cover; /* Ensure the images cover their area without distortion */
-    border-radius: 15px; /* Add rounded corners */
+    flex: 1; /* Let images grow equally */
+    max-width: calc(20% - 16px); /* Divide the width into 5 parts, accounting for gaps */
+    height: 200px; /* Adjust height to desired size */
+    object-fit: cover; /* Ensure images cover their area without distortion */
+    border-radius: 15px; /* Optional: Rounded corners */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
     
 
