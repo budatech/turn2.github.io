@@ -27,7 +27,7 @@ body {
     }
 
 .background-container {
-    background: url('tile3.png') center center;
+    background: url('images/tile3.png') center center;
     background-size: contain; /* Or 'cover' if you want it to stretch */
     background-attachment: scroll;
     min-height: 100vh;
