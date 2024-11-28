@@ -124,7 +124,7 @@ nav {
     background-repeat: repeat; /* Repeat the pattern throughout the background */
     background-size: auto; /* Use the natural size of the pattern */
     padding-top: 40px; /* Reduce padding for alignment */
-    padding-bottom: 40px; /* Match top padding */
+    padding-bottom: 20px; /* Match top padding */
     border-radius: 15px; /* Optional: Rounding for smoothness */
             }
 
