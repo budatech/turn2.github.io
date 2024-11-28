@@ -294,6 +294,39 @@ footer {
 .social-media-icon.tiktok:hover {background-image: url('images/turn2tiktkokbuttonhover.png');}
 
 
+/*######################### IMAGE GALLERY SECTION #########################*/
+
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the gallery on the page */
+    align-items: center; /* Vertically align items */
+    padding: 40px 0; /* Add spacing above and below the gallery */
+    background-color: transparent; /* Transparent background */
+                }
+
+.image-gallery-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Evenly space images */
+    align-items: center; /* Align images vertically */
+    gap: 20px; /* Add space between the images */
+    max-width: 1200px; /* Match the width of the hero section */
+    width: 100%; /* Make it responsive */
+    padding: 0 20px; /* Add some horizontal padding */
+                        }
+
+.gallery-image {
+    width: 180px; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Black box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+                }
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Intensify shadow on hover */
+                    }
+
 
 /*######################### RESPONSIVE DESKTOP STYLING #########################*/
 @media (min-width: 769px) {
