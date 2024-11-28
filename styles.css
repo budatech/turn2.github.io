@@ -20,7 +20,7 @@ body {
     font-family: Roboto, sans-serif;
     background: url('tile3.png') center center; /* Center the background */
     background-size: cover; /* Scale the image to cover the viewport */
-    background-attachment: fixed; /* Optional: Keep the background fixed during scroll */
+    background-attachment: scroll; /* Optional: Keep the background fixed during scroll */
     color: #c4c4c4;
     min-height: 100vh; /* Ensure the body covers the full viewport height */
     display: flex;
