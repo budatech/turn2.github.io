@@ -307,26 +307,29 @@ footer {
                 }
 
 .image-gallery-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Evenly space images */
-    align-items: center; /* Align images vertically */
-    gap: 20px; /* Add space between the images */
+    display: flex; /* Flexbox for arranging images */
+    justify-content: space-between; /* Even spacing between images */
+    align-items: center; /* Center-align images vertically */
     max-width: 1200px; /* Match the width of the hero section */
-    width: 100%; /* Make it responsive */
-    padding: 0 20px; /* Add some horizontal padding */
+    margin: 0 auto; /* Center the gallery on the page */
+    padding: 0 20px; /* Add padding for consistent alignment */
+    gap: 20px; /* Space between images */
                         }
 
 .gallery-image {
-    width: 180px; /* Adjust the image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Round the corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Black box shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
-                }
+    flex: 1; /* Allow images to grow equally */
+    height: 200px; /* Adjust height to your preference */
+    max-width: calc(100% / 5 - 20px); /* Divide the width equally for 5 images, accounting for gaps */
+    object-fit: cover; /* Ensure the images cover their area without distortion */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+            }
+    
 
 .gallery-image:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Intensify shadow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Intensify shadow */
                     }
 
 
