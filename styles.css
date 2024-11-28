@@ -301,7 +301,7 @@ footer {
     justify-content: center; /* Center the gallery on the page */
     align-items: center; /* Vertically align items */
     padding: 40px 0; /* Add spacing above and below the gallery */
-    background-color: transparent !important; /* Force transparent background */
+    /* background-color: transparent !important; */
                 }
 
 .image-gallery-container {
@@ -312,7 +312,7 @@ footer {
     max-width: 1200px; /* Match the width of the hero section */
     width: 100%; /* Make it responsive */
     padding: 0 20px; /* Add some horizontal padding */
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
 
                         }
 
