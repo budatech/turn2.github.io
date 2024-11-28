@@ -127,7 +127,7 @@ nav {
 
 .hero-section {
     padding-top: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     border-radius: 15px;
             }
 
@@ -313,8 +313,9 @@ footer {
     gap: 20px; /* Add space between the images */
     max-width: 1200px; /* Match the width of the hero section */
     width: 100%; /* Make it responsive */
-    padding: 0 20px; /* Add some horizontal padding */
-                        }
+    padding-top: 10px;
+    padding-bottom: 30px;
+            }                        }
 
 .gallery-image {
     width: 180px; /* Adjust the image size */
