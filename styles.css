@@ -318,7 +318,7 @@ footer {
 
 .gallery-image {
     flex: 1; /* Let images grow equally */
-    max-width: calc(40% - 16px); /* Divide the width into 5 parts, accounting for gaps */
+    max-width: calc(20% - 16px); /* Divide the width into 5 parts, accounting for gaps */
     height: 300px; /* Adjust height to desired size */
     object-fit: cover; /* Ensure images cover their area without distortion */
     border-radius: 15px; /* Optional: Rounded corners */
