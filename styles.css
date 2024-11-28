@@ -18,14 +18,14 @@ html, body {height: 100%; /* Ensures the body takes the full height of the viewp
 
 body {
     font-family: Roboto, sans-serif;
-    background: url('images/tile.png') repeat; /* Use seamless1.png as background */
-    background-position: top left; /* Optional - sets starting point */
-    background-size: auto; /* Keeps the pattern as is */
+    background: url('tile3.png') center center; /* Center the background */
+    background-size: cover; /* Scale the image to cover the viewport */
+    background-attachment: fixed; /* Optional: Keep the background fixed during scroll */
     color: #c4c4c4;
-    min-height: 100vh; /* Ensure body covers full viewport height */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
     display: flex;
     flex-direction: column;
-    }
+}
 
 
 /*######################### DESKTOP HEADER #########################*/
