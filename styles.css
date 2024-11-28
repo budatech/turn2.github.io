@@ -14,12 +14,14 @@ main {flex-grow: 1; /* Ensures the main content grows to fill the available spac
 
 /*######################### DESKTOP BODY #########################*/
 
-html, body {height: 100%; /* Ensures the body takes the full height of the viewport */}
+html, body {height: 100%;
+            margin: 0;
+            }
 
 body {
     font-family: Roboto, sans-serif;
     background: url('tile3.png') center center; /* Center the background */
-    background-size: cover; /* Scale the image to cover the viewport */
+    background-size: contain; /* Ensures full image fits */
     background-attachment: scroll; /* Optional: Keep the background fixed during scroll */
     color: #c4c4c4;
     min-height: 100vh; /* Ensure the body covers the full viewport height */
