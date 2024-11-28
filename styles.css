@@ -122,7 +122,6 @@ nav {
 /*######################### DESKTOP HERO STYLING #########################*/
 
 .hero-section {
-    background: none; /* Remove any background styles */
     padding-top: 40px;
     padding-bottom: 20px;
     border-radius: 15px;
