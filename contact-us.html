@@ -7,20 +7,24 @@
         src="https://form.jotform.com/243327721450047" 
         frameborder="0" 
         style="min-width:100%;max-width:100%;border:none;" 
-        scrolling="no"
-        >
+        scrolling="no">
     </iframe>
 </div>
 
 <script>
-    function resizeIframe() {
+    function adjustIframeHeight() {
         const iframe = document.getElementById('JotFormIFrame-243327721450047');
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+        iframe.onload = () => {
+            const iframeDocument = iframe.contentWindow.document;
+            const iframeBody = iframeDocument.body;
+
+            // Set the iframe height dynamically
+            iframe.style.height = iframeBody.scrollHeight + "px";
+        };
     }
 
-    // Trigger resize on iframe load
-    document.getElementById('JotFormIFrame-243327721450047').addEventListener("load", resizeIframe);
+    adjustIframeHeight();
 
-    // Listen for resize events in the iframe
-    window.addEventListener("resize", resizeIframe);
+    // Optional: Adjust iframe height on window resize
+    window.addEventListener("resize", adjustIframeHeight);
 </script>
