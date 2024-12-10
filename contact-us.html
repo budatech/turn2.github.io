@@ -1,30 +1,10 @@
-<div style="position: relative; width: 100%; height: auto; overflow: hidden;">
-    <iframe 
-        id="JotFormIFrame-243327721450047" 
-        title="Form" 
-        allowtransparency="true" 
-        allow="geolocation; microphone; camera; fullscreen" 
-        src="https://form.jotform.com/243327721450047" 
-        frameborder="0" 
-        style="min-width:100%;max-width:100%;border:none;" 
-        scrolling="no">
-    </iframe>
-</div>
-
-<script>
-    function adjustIframeHeight() {
-        const iframe = document.getElementById('JotFormIFrame-243327721450047');
-        iframe.onload = () => {
-            const iframeDocument = iframe.contentWindow.document;
-            const iframeBody = iframeDocument.body;
-
-            // Set the iframe height dynamically
-            iframe.style.height = iframeBody.scrollHeight + "px";
-        };
-    }
-
-    adjustIframeHeight();
-
-    // Optional: Adjust iframe height on window resize
-    window.addEventListener("resize", adjustIframeHeight);
-</script>
+<iframe 
+    id="JotFormIFrame-243327721450047" 
+    title="Form" 
+    allowtransparency="true" 
+    allow="geolocation; microphone; camera; fullscreen" 
+    src="https://form.jotform.com/243327721450047" 
+    frameborder="0" 
+    style="width:100%;height:100vh;border:none;" 
+    scrolling="no">
+</iframe>
