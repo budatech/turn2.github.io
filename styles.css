@@ -263,6 +263,41 @@ footer {
 .footer-info p {margin: 5px 0;}
 
 
+
+/*######################### CONTACT-US DKESTOP STYLING #########################*/
+
+.form-header {
+    font-family: 'Roboto', sans-serif !important;
+    color: #333 !important;
+    text-transform: uppercase;
+}
+
+.form-all {
+    background: transparent !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    color: #333 !important;
+}
+
+.form-line {
+    margin: 10px 0 !important;
+}
+
+.form-submit-button {
+    background-color: #2890df !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.form-textbox, .form-textarea {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    color: #333 !important;
+}
+
+
 /*######################### SOCIAL MEDIA ICON STYLING #########################*/
 
 .social-media-container {
