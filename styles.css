@@ -266,6 +266,88 @@ footer {
 
 /*######################### CONTACT-US DKESTOP STYLING #########################*/
 
+.contact-section {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px; /* Add space between the form and the map */
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9; /* Light background for the section */
+                }
+
+.contact-form h2 {
+    text-align: center; /* Center the heading */
+    color: #00baff; /* Updated to match your website's blue color */
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-family: 'Roboto', sans-serif; /* Match website font */
+    font-size: 24px; /* Adjust size for consistency */
+    font-weight: bold;
+                }
+
+.contact-form, .map-section {
+    max-width: 450px; /* Limit width for both sections */
+    width: 100%;
+    flex: 1 1 450px; /* Allow both to flex equally */
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #00baff; /* Subtle border to highlight the form */
+                            }
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #2c3345; /* Dark text for labels */
+                    }
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+                    }
+
+textarea {
+    height: 100px;
+    resize: vertical;
+        }
+
+.form-group input[type="file"] {
+    font-size: 14px;
+    color: #2c3345;
+                    }
+
+.send-button {
+    background-color: #00baff; /* Website's blue color */
+    color: white; /* White text for contrast */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+            }
+
+.send-button:hover {background-color: #2890df;}
+
+iframe {
+    width: 100%;
+    height: 450px; /* Adjust to match contact form height */
+    border: none;
+    border-radius: 10px;
+    }
+
 
 /*######################### SOCIAL MEDIA ICON STYLING #########################*/
 
